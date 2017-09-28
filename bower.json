@@ -1,0 +1,30 @@
+{
+  "name": "requirejs example",
+  "homepage": "https://github.com/www-example/requirejs",
+  "authors": [
+    "byron <xiaobosun@gridinfo.com.cn>"
+  ],
+  "description": "12xue requirejs example",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "^2.3.5",
+    "jquery": "^3.2.1",
+    "layer": "^3.0.3",
+    "bootstrap": "^3.3.7",
+    "require-css": "^0.1.10",
+    "PACE": "pace#^1.0.2",
+    "jquery-validation": "jquery-validate#^1.17.0",
+    "domReady": "^2.0.1",
+    "vue": "^2.4.4"
+  }
+}

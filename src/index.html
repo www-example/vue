@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>12xue vue demo</title>
+    <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css">
+    <style type="text/css">
+        [v-cloak] { display:none} /* v-cloak解决vue解析闪烁问题 */
+    </style>
+    <script src="components/requirejs/require.js" data-main="scripts/app/config"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+            <div class="box" v-cloak>
+                姓名：{{name}}
+            </div>
+            <hr>
+            <div id="todo-template">
+                <ol>
+                    <todo-item v-for="item in list" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    require(['controller/index'], function(module){
+
+    });
+</script>
+</body>
+</html>
